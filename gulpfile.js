@@ -15,7 +15,8 @@ const scss = require('gulp-sass'),
   svgSprite = require('gulp-svg-sprite'),
   clean = require('gulp-clean'),
   ttfToWoff2 = require('gulp-ttf2woff2'),
-  tinypng = require('gulp-tinypng-compress');
+  tinypng = require('gulp-tinypng-compress'),
+  fileInclude = require('gulp-file-include');
 
 const styles = () => {
   return src([
@@ -48,6 +49,23 @@ const scripts = () => {
     .pipe(dest('app/js'))
     .pipe(browserSync.stream());
 };
+
+// const html = () => {
+//   return src(['app/*.html', '!app/parts/**/*.html'])
+//     .pipe(fileInclude({
+//       prefix: '@@', 
+//       basepath: '@file'
+//   }))
+// };
+
+gulp.task('html', function() {
+  return gulp.src(['app/*.html','!app/parts/**/*.html'])
+  .pipe(fileinclude({
+  prefix: '@@',
+  basepath: '@file'
+  }))
+  .pipe(gulp.dest('./build'));
+  });
 
 const fonts = () => {
   return src('app/assets/fonts/**/*')
