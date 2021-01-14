@@ -1,6 +1,22 @@
+$blue: #a3bbc8;
+$light-blue:#436372;
+$light-orange: #fcd7b6;
+
 @mixin reset {
   padding: 0;
   margin: 0;
+}
+
+@mixin rubik($weight, $size) {
+  font-family: "Rubik";
+  font-weight: $weight;
+  font-size: $size+px;
+}
+
+@mixin dmsans($weight, $size) {
+  font-family: "DMSans";
+  font-weight: $weight;
+  font-size: $size+px;
 }
 
 @mixin r($width) {

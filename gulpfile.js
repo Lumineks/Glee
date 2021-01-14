@@ -58,14 +58,14 @@ const scripts = () => {
 //   }))
 // };
 
-gulp.task('html', function() {
-  return gulp.src(['app/*.html','!app/parts/**/*.html'])
-  .pipe(fileinclude({
-  prefix: '@@',
-  basepath: '@file'
-  }))
-  .pipe(gulp.dest('./build'));
-  });
+// ('html', function () {
+//   return gulp.src(['app/*.html', '!app/parts/**/*.html'])
+//     .pipe(fileinclude({
+//       prefix: '@@',
+//       basepath: '@file'
+//     }))
+//     .pipe(gulp.dest('./build'));
+// });
 
 const fonts = () => {
   return src('app/assets/fonts/**/*')
