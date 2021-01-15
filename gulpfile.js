@@ -9,7 +9,7 @@ const {
 const scss = require('gulp-sass'),
   concat = require('gulp-concat'),
   browserSync = require('browser-sync').create(),
-  uglify = require('gulp-uglify-es').default, // !
+  uglify = require('gulp-uglify-es').default,
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps'),
   svgSprite = require('gulp-svg-sprite'),
@@ -21,7 +21,8 @@ const scss = require('gulp-sass'),
 const styles = () => {
   return src([
       'node_modules/normalize.css/normalize.css',
-      'node_modules/swiper/swiper-bundle.css',
+      'node_modules/magnific-popup/dist/magnific-popup.css',
+      'node_modules/slick-carousel/slick/slick.css',
       'app/scss/**/*.scss'
     ])
     .pipe(sourcemaps.init())
@@ -40,8 +41,9 @@ const styles = () => {
 
 const scripts = () => {
   return src([
-      'node_modules/swiper/swiper-bundle.js',
-      'node_modules/smoothscroll-polyfill/dist/smoothscroll.js',
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+      'node_modules/slick-carousel/slick/slick.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
