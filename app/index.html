@@ -50,16 +50,16 @@
                         </li>
                     </ul>
                     <div class="header__box">
-                        <a class="header__btn header__btn--search" href="#"></a>
+                        <a class="header__btn header__btn--search icon icon--search" href="#"></a>
                         <div class="header__buttons">
-                            <button class="header__btn header__btn--like">
+                            <button class="header__btn header__btn--like icon icon--like">
                                 <span class="header__number">0</span>
                             </button>
-                            <button class="header__btn header__btn--cart">
+                            <button class="header__btn header__btn--cart icon icon--cart">
                                 <span class="header__number">0</span>
                             </button>
                         </div>
-                        <button class="header__btn header__btn--more"></button>
+                        <button class="header__btn header__btn--more icon icon--more"></button>
                     </div>
                 </nav>
             </div>
@@ -67,80 +67,451 @@
     </header>
 
     <main class="main">
-        <div class="preview">
+        <section class="preview">
             <div class="container-fluid">
                 <div class="preview__slider">
-                    <div class="preview__slide" style="background-image: url('images/preview-1.png');">
-                        <div class="preview__wrapper container">
-                            <p class="preview__title">
-                                Smart and trendy
-                            </p>
-                            <p class="preview__text">
-                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            </p>
-                            <a class="preview__link" href="#">
-                                Shop now
-                            </a>
+                    <div class="preview__slide">
+                        <div class="preview__wrapper container" style="background-image: url('images/preview-1.png');">
+                            <div class="preview__content">
+                                <p class="preview__title">
+                                    Smart and trendy
+                                </p>
+                                <p class="preview__text">
+                                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                </p>
+                                <a class="preview__link decoration decoration--arrow" href="#">
+                                    Shop now
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="preview__slide" style="background-image: url('images/preview-1.png');">
-                        <div class="preview__wrapper container">
-                            <p class="preview__title">
-                                Smart and trendy
-                            </p>
-                            <p class="preview__text">
-                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            </p>
-                            <a class="preview__link" href="#">
-                                Shop now
-                            </a>
+                    <div class="preview__slide">
+                        <div class="preview__wrapper container" style="background-image: url('images/preview-1.png');">
+                            <div class="preview__content">
+                                <p class="preview__title">
+                                    Smart and trendy
+                                </p>
+                                <p class="preview__text">
+                                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                </p>
+                                <a class="preview__link decoration decoration--arrow" href="#">
+                                    Shop now
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="preview__slide" style="background-image: url('images/preview-1.png');">
-                        <div class="preview__wrapper container">
-                            <p class="preview__title">
-                                Smart and trendy
-                            </p>
-                            <p class="preview__text">
-                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                            </p>
-                            <a class="preview__link" href="#">
-                                Shop now
-                            </a>
+                    <div class="preview__slide">
+                        <div class="preview__wrapper container" style="background-image: url('images/preview-1.png');">
+                            <div class="preview__content">
+                                <p class="preview__title">
+                                    Smart and trendy
+                                </p>
+                                <p class="preview__text">
+                                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                </p>
+                                <a class="preview__link decoration decoration--arrow" href="#">
+                                    Shop now
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <ul class="preview__list benefits">
-                    <li class="benefits__item benefits__item--support">
-                        <span class="benefits__title">
+                <ul class="preview__list">
+                    <li class="preview__item preview__item--support">
+                        <span class="preview__item-title">
                             Support 24/7.
                         </span>
-                        <p class="benefite__text">
+                        <p class="preview__item-text">
                             Contact us 24 hours a day, 7 days a week.
                         </p>
                     </li>
-                    <li class="benefits__item benefits__item--delivery">
-                        <span class="benefits__title">
+                    <li class="preview__item preview__item--delivery">
+                        <span class="preview__item-title">
                             Delivery
                         </span>
-                        <p class="benefite__text">
+                        <p class="preview__item-text">
                             Free shipping on all US order.
                         </p>
                     </li>
-                    <li class="benefits__item benefits__item--payment">
-                        <span class="benefits__title">
+                    <li class="preview__item preview__item--payment">
+                        <span class="preview__item-title">
                             100% Payment secure.
                         </span>
-                        <p class="benefite__text">
+                        <p class="preview__item-text">
                             We ensure secure payment with PEV.
                         </p>
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
+
+        <section class="weekly-products">
+            <div class="container">
+                <h2 class="weekly-products__title title">
+                    Products of the week
+                </h2>
+                <ul class="weekly-products__controls">
+                    <li class="weekly-products__control">
+                        <button class="weekly-products__btn">All</button>
+                    </li>
+                    <li class="weekly-products__control">
+                        <button class="weekly-products__btn">Furnitures</button>
+                    </li>
+                    <li class="weekly-products__control">
+                        <button class="weekly-products__btn">Chairs</button>
+                    </li>
+                    <li class="weekly-products__control">
+                        <button class="weekly-products__btn">Lighting</button>
+                    </li>
+                    <li class="weekly-products__control">
+                        <button class="weekly-products__btn">Decor</button>
+                    </li>
+                </ul>
+                <ul class="weekly-products__list">
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-1.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Wooden radio
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-2.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Wooden radio
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-3.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        White chair
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-4.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Retro table
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-5.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Wooden radio
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-6.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Wooden radio
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-7.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        White chair
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="weekly-products__item">
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/weekly-products-8.png" alt="">
+                            <h3 class="product-card__title">
+                                <a class="product-card__link" href="#">
+                                        Retro table
+                                    </a>
+                            </h3>
+                            <span class="product-card__price">$29.00</span>
+                            <div class="product-card__actions">
+                                <a class="product-card__action icon icon--search" href="#">
+                                        Search
+                                    </a>
+                                <button class="product-card__action icon icon--cart">
+                                        Add to cart
+                                    </button>
+                                <a class="product-card__action icon icon--like" href="#">
+                                        Add to favourites
+                                    </a>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <ul class="weekly-products__trends">
+                    <li class="weekly-products__trend">
+                        <img class="weekly-products__trend-image" src="images/trend-1.png" alt="">
+                        <h3 class="weekly-products__trend-title">
+                            <a class="weekly-products__trend-link" href="#">
+                                    Mirum Notare Tellus
+                            </a>
+                        </h3>
+                        <div class="weekly-products__descr">
+                            <p class="weekly-products__text">
+                                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26
+                            </p>
+                            <p class="weekly-products__text">
+                                E27LEDCornLight
+                            </p>
+                        </div>
+                        <a class="weekly-products__trend-btn decoration decoration--arrow" href="#">
+                            View more
+                        </a>
+                    </li>
+                    <li class="weekly-products__trend">
+                        <img class="weekly-products__trend-image" src="images/trend-2.png" alt="">
+                        <h3 class="weekly-products__trend-title">
+                            <a class="weekly-products__trend-link" href="#">
+                                    Malesuada Tempor Euismod
+                                </a>
+                        </h3>
+                        <div class="weekly-products__descr">
+                            <p class="weekly-products__text">
+                                50W 8000lm Compact Size for HID
+                            </p>
+                            <p class="weekly-products__text">
+                                StreetLightReplacementLEDCornLight
+                            </p>
+                        </div>
+                        <a class="weekly-products__trend-btn decoration decoration--arrow" href="#">
+                            View more
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__item">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__image" src="images/logo.png" alt="Логотип Glee">
+                    </a>
+                    <address class="footer__contacts">
+                        <p>
+                            <span>ADDRESS:</span> 4772 Wines Lane Houston, TX 77032
+                        </p>
+                        <a class="footer__link" href="tel:+8323475843"><span>Telephone:</span> +832-347-5843</a>
+                        <a class="footer__link" href="mailto:contact@Glee.com"><span>Email</span> contact@Glee.com</a>
+                    </address>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Services
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Our Blog
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Terms & Condition
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Account
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Your Account
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Checkout
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Login
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link" href="#">
+                                Register
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Newsletter
+                    </div>
+                    <p class="footer__text">
+                        Subscribe by our newsletter and get update protidin.
+                    </p>
+                    <form class="footer__form">
+                        <label class="footer__label" for="footer-email">
+                            Email address
+                        </label>
+                        <input class="footer__input" id="footer-email" type="email" name="email" placeholder="Email address" required>
+                        <button class="footer__btn btn" type="submit">
+                                Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+                <ul class="footer__links">
+                    <li class="footer__links-item">
+                        <a class="footer__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a class="footer__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a class="footer__link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a class="footer__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="js/main.min.js"></script>

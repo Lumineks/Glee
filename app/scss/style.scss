@@ -2,5 +2,149 @@
 @import 'vars';
 @import 'global';
 @import 'components/header';
+@import 'index-page/preview';
+@import 'index-page/weekly-products';
 
+.footer {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $light-gray;
 
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 78px 0 73px;
+    border-bottom: 1px solid #dae4e9;
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 23px;
+  }
+
+  &__contacts {
+    max-width: 200px;
+
+    p {
+      margin-bottom: 17px;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    padding-top: 16px;
+    margin-bottom: 19px;
+    @include dmsans(700, 16);
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    transition: color .3s;
+
+    &:hover {
+      color: $dark-blue;
+    }
+
+    &:not(:last-child) {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__label {
+    font-size: 0;
+  }
+
+  &__form {
+    display: flex;
+    @include dmsans(400, 12);
+  }
+
+  &__input {
+    width: 170px;
+    padding: 0 12px;
+    height: 36px;
+    background-color: #fef7f0;
+    border: 1px solid transparent;
+    transition: border-color .3s;
+
+    &::placeholder {
+      @include dmsans(400, 12);
+      color: #234969;
+    }
+
+    &:hover {
+      border-color: $dark-blue;
+    }
+  }
+
+  &__btn {
+    width: 100px;
+    height: 36px;
+    background-color: $blue;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: opacity .3s, transform .3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+  }
+
+  &__copy {
+    margin-right: 100px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__links-item {
+    &:not(:last-child) {
+      position: relative;
+      margin-right: 15px;
+      padding-right: 15px;
+
+      &::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        color: $light-gray;
+      }
+    }
+  }
+}
